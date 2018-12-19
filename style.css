@@ -1,0 +1,252 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  height: 100%;
+  font-family: helvetica;
+}
+
+
+/*loading page */
+.load {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+.color1{
+  height: 20%;
+  width: 100%;
+  background: #263C8B;
+  animation-name: cc1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes cc1 {
+  0%{background: #263C8B;}
+  20%{background: #0f0b26;}
+  40%{background: #011640;}
+  60%{background: #345573;}
+  80%{background: #4D7186;}
+  100%{background: #263C8B;}
+}
+
+.color2{
+  height: 20%;
+  width: 100%;
+  background: #4E74A6;
+  animation-name: cc2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes cc2 {
+  0%{background: #4E74A6;}
+  20%{background: #522421;}
+  40%{background: #2d5873;}
+  60%{background: #6085a6;}
+  80%{background: #284253;}
+  100%{background: #4E74A6;}
+}
+
+.color3{
+  height: 20%;
+  width: 100%;
+  background: #BDBF78;
+  animation-name: cc3;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes cc3 {
+  0%{background: #BDBF78;}
+  20%{background: #8c5a2e;}
+  40%{background: #7ba696;}
+  60%{background: #4c6f73;}
+  80%{background: #e0542e;}
+  100%{background: #BDBF78;}
+}
+
+.color4{
+  height: 20%;
+  width: 100%;
+  background: #BFA524;
+  animation-name: cc4;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes cc4 {
+  0%{background: #BFA524;}
+  20%{background: #bf8641;}
+  40%{background: #bfba9f;}
+  60%{background: #6f8c51;}
+  80%{background: #f4a720;}
+  100%{background: #BFA524;}
+}
+
+.color5{
+  height: 20%;
+  width: 100%;
+  background: #2E231F;
+  animation-name: cc5;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes cc5 {
+  0%{background: #2E231F;}
+  20%{background: #b3b372;}
+  40%{background: #bf9663;}
+  60%{background: #f2dc6d;}
+  80%{background: #ef8c12;}
+  100%{background: #2E231F;}
+}
+
+
+.down{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left:48%;
+  bottom: 30px;
+  background: url(./images/arrow.png) center no-repeat;
+  background-size: 100% 100%;
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes arrow {
+  0%{bottom: 80px;}
+  100%{bottom: 0;}
+}
+
+
+
+/* question */
+.panel1{
+  height: 100%;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+align-items: center;
+
+}
+.art{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+  font-family: 'Finger Paint', cursive;
+  font-size: 50px;
+}
+.fade-in{
+  opacity: 1;
+  transform: translateY(-50px);
+}
+/* plane */
+.plane{
+  height: 120%;
+}
+/* panel */
+#pinContainer, #pinContainer2{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+#slideContainer, #slideContainer2{
+  width: 400%;
+  height: 100%;
+}
+.panel{
+  height: 100%;
+  width: 25%;
+  float: left;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  height: auto;
+  width: 60%;
+}
+.textintro{
+  width: 15%;
+  margin-right: 10px;
+}
+.culture{
+  background-color: #d6d1cd;
+}
+.artistic1{
+  background-color: #f5e1e0;
+}
+.artistic2{
+  background-color: #d6d1cd;
+}
+.artistic3{
+  background-color: #f5e1e0;
+}
+.in1, .in3 {
+  background-color: #e9cdca;
+}
+.in2, .in4 {
+background-color: #f1f1f1;
+}
+
+/*parallax*/
+.parallaxParent {
+  height: 100vh;
+  overflow: hidden;
+}
+.parallaxParent > * {
+  height: 200%;
+  position: relative;
+  top: -100%;
+}
+.pp{
+  width: auto;
+  height: 70%;
+}
+.box2{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.panel2{
+  height: 50%;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+align-items: center;
+
+}
+/*self*/
+.pencil{
+  width: 100%;
+}
+.self{
+  height: auto;
+  width: 100%;
+}
+.footer{
+  text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.linkk{
+  text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+a:hover {
+  color: rgb(135, 167, 101);
+  border-bottom: 1px solid;
+}
+
+a {
+  color: black;
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
