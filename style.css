@@ -144,6 +144,7 @@ align-items: center;
 /* plane */
 .plane{
   height: 120%;
+  font-size: 20px;
 }
 /* panel */
 #pinContainer, #pinContainer2{
@@ -164,6 +165,7 @@ align-items: center;
   display:flex;
   justify-content: center;
   align-items: center;
+  font-size: 22px;
 }
 .image{
   height: auto;
@@ -174,23 +176,18 @@ align-items: center;
   margin-right: 10px;
 }
 .culture{
-  background-color: #d6d1cd;
+  background-image: url(/images/b1.png);
 }
 .artistic1{
-  background-color: #f5e1e0;
+  background-image: url(/images/b2.png);
 }
 .artistic2{
-  background-color: #d6d1cd;
+  background-image: url(/images/b1.png);
 }
 .artistic3{
-  background-color: #f5e1e0;
+  background-image: url(/images/b2.png);
 }
-.in1, .in3 {
-  background-color: #e9cdca;
-}
-.in2, .in4 {
-background-color: #f1f1f1;
-}
+
 
 /*parallax*/
 .parallaxParent {
@@ -219,6 +216,19 @@ background-color: #f1f1f1;
   justify-content: center;
 align-items: center;
 
+}
+#end{
+  top: 60px;
+}
+.button{
+font-family: helvetica;
+font-size: 30px;
+margin-top: 30px;
+text-align: center;
+border: rgb(135, 167, 101) solid 2px;
+}
+.button:hover{
+  color: rgb(135, 167, 101);
 }
 /*self*/
 .pencil{
