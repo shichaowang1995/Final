@@ -176,16 +176,16 @@ align-items: center;
   margin-right: 10px;
 }
 .culture{
-  background-image: url(images/b1.png);
+  background-image: url('images/b1.png');
 }
 .artistic1{
-  background-image: url(images/b2.png);
+  background-image: url('images/b2.png');
 }
 .artistic2{
-  background-image: url(images/b1.png);
+  background-image: url('images/b1.png');
 }
 .artistic3{
-  background-image: url(images/b2.png);
+  background-image: url('images/b2.png');
 }
 
 
